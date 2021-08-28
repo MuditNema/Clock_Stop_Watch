@@ -174,8 +174,16 @@ body{
     font-weight: bold;
 }
 
+.copyright{
+    text-align: center;
+    margin-top:2vw;
+    font-size: 1.5vw;
+    color: whitesmoke;
+}
+.copyright a{
+    color: white;
 
-
+}
 
 
 
@@ -192,12 +200,39 @@ body{
     }
 }
 @media (max-width : 399px){
+    .tap button{
+        width: 14vw;
+        height: 6vw;
+        font-size:2.5vw ;
+    }
+    .digital , .analog{
+        width: 85%;
+        height: 35vw;
+    }
+    .digital{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 5vw;
+    }
+    .digital p{
+        font-size: 4.6vw;
+    }
+    .final-analog{
+        width: 23vw;
+    }
+    .part{
+        width: 85%;
+    }
+    .title{
+        font-size: 5vw;
+    }
     .sub-container{
         flex-direction: column;
     }
     #watch{
         flex-direction: column;
-        height: 65vw;
+        height: 62vw;
     }
     #timer{
         height: 65vw;
@@ -207,5 +242,17 @@ body{
     }
     .btns{
         flex-direction: column;
+
+    }
+    .tap button{
+        width: 15vw;
+        height: 7vw;
+        font-size: 3.2vw;
+    }
+    .timer-disp h3{
+        font-size: 8vw;
+    }
+    .copyright{
+        font-size: 4vw;
     }
 }
