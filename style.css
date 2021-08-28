@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    background-color: #d7d7d7;
+}
+
+.title{
+    font-size: 3.5vw;
+    text-align: center;
+    background-color: black;
+    color:whitesmoke;
+}
+.body-container{
+    margin-top: 2vw;
+    width: 99.75%;
+    position: relative;
+    height: 30vw;
+}
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+.part{
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    margin: auto;
+    border: 2px solid white;
+    width: 45%;
+}
+#watch{
+    justify-content: space-evenly;
+    border-radius: 1vw;
+    box-shadow: 1vw 1vw 1vw 0vw rgb(0, 0, 0,0.75);
+    align-items: center;
+    background-color: #acaaaa;
+
+}
+.analog{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.final-analog{
+    position: relative;
+    height: 74%;
+    width:20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("clock.png") no-repeat;
+    background-size: 100%;
+    border-radius: 100vw;
+}
+.handM , .handH , .handS , .bowl{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+.bowl{
+    width: 1vw;
+    height: 1vw;
+}
+.handS{
+    background: red;
+}
+.handM{
+    position: absolute;
+    width: 1.6%;
+    height: 35%;
+    top: 15%;
+    left: 48.9%;
+    opacity: 0.8; 
+}
+.handH{
+    position: absolute;
+    width: 2.3%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+.handS{
+    position: absolute;
+    width: 1%;
+    height: 40%;
+    top: 10.5%;
+    left: 49.25%;
+    opacity: 0.8; 
+}
+.digital,.analog{
+    display: flex;
+    flex-direction: column;
+    width:48%;
+    height:27vw;
+}
+.digital{
+    font-size: 2.3vw;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #be9b9b;
+    border-radius: 2vw;
+    color: rgb(80, 79, 79);
+    font-weight: bold;
+    border: 0.2vw solid #947878;
+}
+#timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #acaaaa;
+    border-radius: 1vw;
+    box-shadow: 1vw 1vw 1vw 0vw rgb(0, 0, 0,0.75);
+}
+.display , .btns{
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 45%;
+}
+/* additional settings on the buttons of stopwatch */
+.btns,.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.display{
+    background-color: #555454;
+    border-radius: 2vw;
+    margin: 2vw;
+    
+}
+.tap button{
+   width: 10vw;
+   height: 4vw;
+   font-size: 1.8vw;
+   font-weight: bold;
+   border: none;
+   border-radius: 10vw;
+   color: white;
+   background-color: #df1111;
+}
+.tap button:hover{
+    color:#df1111;
+    cursor: pointer;
+    background-color:#df111152;
+}
+
+.timer-disp , h3{
+    margin: auto;
+    text-align: center;
+    font-size:4vw;
+    font-weight: bold;
+    color: whitesmoke;
+    width: inherit;
+    /* height: inherit; */
+    /* margin-top: 4vw; */
+}
+
+
+.digital p{
+    font-size: 1.8vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Some responsive designing */
+
+@media (max-width:950px) and (min-width : 400px){
+    .sub-container{
+        flex-direction: column;
+    }
+    .body-container{
+        height: 70vw;
+    }
+}
+@media (max-width : 399px){
+    .sub-container{
+        flex-direction: column;
+    }
+    #watch{
+        flex-direction: column;
+        height: 65vw;
+    }
+    #timer{
+        height: 65vw;
+    }
+    .body-container{
+        height: 150vw;
+    }
+    .btns{
+        flex-direction: column;
+    }
+}

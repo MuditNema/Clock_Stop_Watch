@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">Clock</div>
+    </header>
+    <section>
+        <div class="body-container">
+            <div class="sub-container">
+                <div class="part " id="watch">
+                    <div class="analog">
+                        <div class="final-analog">
+                            <div class="bowl"></div>
+                            <div class="handH" id="handH"></div>
+                            <div class="handM" id="handM"></div>
+                            <div class="handS" id="handS"></div>
+                        </div>
+                    </div>
+                    <div class="digital">
+                        <div class="hour">
+                            Hour <br>
+                            <p id="hrs">12</p>
+                        </div>
+                        <div class="minutes">
+                            Minute <br>
+                            <p id="mn">12</p>
+                        </div>
+                        <div class="seconds">
+                            Seconds <br>
+                            <p id="sc">12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="part" id="timer">
+                    <div class="display">
+                        <div class="timer-disp">
+                            <h3 id="go">0 : 0 : 0</h3>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div class="tap" id="begin" > <button>Start</button> </div>
+                        <div class="tap" id="stop" > <button>Stop</button> </div>
+                        <div class="tap" id="reset" > <button>Reset</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="demo.js"></script>
+</body>
+</html>
